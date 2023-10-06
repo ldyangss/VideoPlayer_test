@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #dff4fe;
+}
+
+.wotw {
+    max-width: 550px;
+    height: 100%;
+}
+
+.wotw img {
+    max-width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.title {
+    color: #7f9098;
+    padding: 0 10px;
+}
+
+.desc {
+    color: #7f9098;
+    font-weight: 500;
+    margin: 15px 0;
+    padding: 0 10px;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px;
+    background-color: #b9d9fb;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #acb2ee;
+}
+
+.ap1-container { 
+    visibility: hidden; 
+    position: fixed;
+    top: 50%;       
+    left: 50%;      
+    transform: translate(-50%, -50%);  
+    width: 80vw;
+    height: 45vw; 
+    z-index: 1000;  
+}
+
+.controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 90%;
+}
+
+#currentTime, #totalTime {
+    font-size: 1.2rem;
+}
+
+#progress {
+    width: 100%;
+}
+
+#playPause{
+    display: inline-block;
+    font-size: 2rem;
+    margin-right: 10px;
+    vertical-align: middle;
+    color: white;
+}
+.volume-container, #fullscreen {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.7em;
+    color: white;
+}
+
+.volume-container {
+    position: relative;
+    vertical-align: middle;
+}
+
+#volume {
+    height: 20px;
+    writing-mode: lr-tb; 
+   
+    position: relative;
+    vertical-align: top;
+}
+
+#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2000;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8em;
+    color: #7f9098;
+}
+
+
+#fullscreen {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+
+.controls button, .controls .volume-container {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; 
+    cursor: pointer;
+}
+
+
+.volume-container {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+
+#volume-icon {
+    padding-right: 5px;
+}
+
+
