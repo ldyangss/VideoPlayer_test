@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cute+Font&family=Edu+SA+Beginner:wght@600&family=Noto+Sans+Chorasmian&family=Rubik+Iso&display=swap');
+@font-face {
+    font-family: 'Changa';  /* 给字体起个名字，以便稍后在CSS中引用 */
+    src: url('/Users/danyangli/Library/Fonts/Changa-Bold.ttf') format('truetype');  /* 指定字体文件的路径和格式 */
+}
+
+/*
+背景蓝 #dff4fe
+文字蓝 #b9d9fb
+文字黑 #020001
+文字灰蓝色 #7f9098
+藕粉色 #c8abc2
+灰粉色 #d7cbe0
+浅粉色 #f6dce6
+粉色 #ebbcc6
+*/
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    background-color: #dff4fe;
+}
+
+.vrtitle {
+    display: flex;
+    justify-content: center;
+    color: #7f9098;
+    font-size: 3rem;
+    font-family: Changa;
+}
+
+.vrContainer {
+    display: grid;
+    gap: 20px;
+}
+
+.arm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.arm img {
+    width: 900px;
+}
+h1, p {
+    font-family: Changa;
+    color: #7f9098;
+    margin: 1rem 7rem;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px;
+    background-color: #b9d9fb;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.wotw img {
+    width: 300px;
+}
+
+.loves img {
+    width: 300px;
+}

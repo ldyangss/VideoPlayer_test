@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Reality Project</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="VR.css">
+    <script src="VR.js"></script>
+</head>
+<body>
+    <h1 class="vrtitle">Virtual Reality</h1>
+    <div class="vrContainer">
+        <div class="arm">
+            <img src="img/AVENUE ROAD MEMORIES.png">
+            <h1>Avenue Road Memories</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio reiciendis inventore velit, illum maxime quam esse doloribus quas obcaecati dolor laborum error tenetur explicabo vero at qui, veniam, sunt eligendi!</p>
+            <button class="btn">Watch Now</button>
+        </div>
+
+        <div class="wotw">
+            <img class="img" src="img/WordontheWater.png">
+            <h1 class="title">Word on the Water</h1> 
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur fugiat ipsum ut assumenda incidunt cupiditate excepturi nemo, eaque soluta explicabo porro quod? Sequi maiores culpa, nesciunt ipsam voluptates deleniti.</p>
+            <button class="btn">Watch Now</button>
+        </div>
+        <div class="ap1-container">
+            <a-scene embedded>
+                <a-assets>
+                    <video id="ap1video" src="Video/Word on the Water_12082020_YouTube.mp4" preload="auto" crossorigin="anonymous"></video>
+                </a-assets>
+    
+                <a-videosphere src="#ap1video" rotation="0 -90 0"></a-videosphere>
+    
+                <div class="controls">
+                    <span id="currentTime">00:00</span> / <span id="totalTime">00:00</span>
+                    <input type="range" id="progress" min="0" max="100" value="0">
+                    <button id="playPause"><i class="fa-regular fa-circle-play"></i></button>
+                    <div class="volume-container">
+                        <i id="volume-icon" class="fas fa-volume-up"></i>
+                        <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+                    </div>
+                    <button id="fullscreen"><i class="fas fa-expand"></i></button>
+    
+                </div>
+                <button id="close"><i class="fa-regular fa-circle-xmark"></i></button>
+            </a-scene>
+        </div>
+
+
+        <div class="loves">
+            <img src="img/lovesofparents.png">
+            <h1>Loves of Parents</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam facere tempora aliquid architecto ratione cum corporis sit quidem animi. Odio atque quibusdam et in, accusamus consectetur velit qui consequuntur accusantium.</p>
+            <button class="btn">Watch Now</button>
+        </div>
+
+    </div>
+</body>
+</html>
